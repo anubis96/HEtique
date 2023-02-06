@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:  'header' 'section' 'footer';
+}
+
+header{
+    grid-area: header;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(187, 247, 227);
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+
+.head_elements{
+    display: flex;
+    flex-direction: column;
+}
+.head_elements .logo{
+    text-align: center;
+}
+.head_elements ul {
+    display: flex;
+    gap: 20px;
+}
+.head_elements ul li{
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 5s;
+}
+.head_elements ul li:hover{
+    cursor: pointer;
+    color: aquamarine;
+    text-shadow: revert;
+    text-decoration: underline;
+    
+}
+li{
+    list-style: none;
+}
+.head_elements img{
+    width: 50px;
+}
+p{
+    text-align: justify;
+}
+.sections_elements{
+    margin: 0 10%;
+    display: flex;
+    gap: 50px;
+}
+a{
+    text-decoration: none;
+
+}
+.sections_elements a {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid black;
+}
+.footer_contents{
+    display: flex;
+    padding: 0 20px;
+    gap: 50px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+}
+.footer_contents .about_us{
+    width: 300px;
+}
+.join_us .socials_media{
+    display: flex;
+    gap: 10px;
+    width: 300px;
+}
+.socials_media .item_social{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.item_social .fa-whatsapp{
+    padding: 20px;
+    color: green;
+}
+.item_social .fa-whatsapp:hover{
+    background-color: green;
+    color: white;
+}
+
+.item_social .fa-telegram{
+    padding: 20px;
+    color: #0088CC;
+}
+.item_social .fa-telegram:hover{
+    background-color: #0088CC;
+    color: white;
+}
+.item_social .fa-facebook-f{
+    padding: 20px;
+    color: #4267B2;
+}
+.item_social .fa-facebook-f:hover{
+    background-color: #4267B2;
+    color: white;
+}
+.socials_media .item_social:hover{
+    cursor: pointer;
+}
+
+.item_social i{
+    font-size: 3rem;
+}
+.logo img{
+    width: 100px;
+}
+footer .coyrigth{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    border-top: 1px solid rgb(92, 92, 92);
+}
+
+/* MEDIA */
+@media screen and (max-width: 780px) {
+    .sections_elements{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+}
